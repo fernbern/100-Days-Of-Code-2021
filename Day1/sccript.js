@@ -1,8 +1,7 @@
 console.log('Hello World');
 const btn = document.querySelector('.btn');
 
-btn.addEventListener("click", function() {
-    const curColour = document.body.style.backgroundColor;
+btn.addEventListener('click', () => {
+    document.body.button.style.backgroundColor = green;
+})
 
-    document.body.style.backgroundColor = curColour === 'red' ? 'blue' : 'red';
-});
