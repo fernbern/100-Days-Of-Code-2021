@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+.item:nth-child(odd) {
+    background-color: #0089fe;
+    padding: 20px;
+}
+.item:nth-child(even) {
+    background-color: #00fe98;
+    padding: 20px;
+}
+.item2 {
+    grid-column: span 4;
+}
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
